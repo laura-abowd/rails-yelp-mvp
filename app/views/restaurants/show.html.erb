@@ -1,0 +1,10 @@
+<h1>Now I can show the restaurants</h1>
+<%= @restaurant.name %>
+<%= @restaurant.address %>
+<%= @restaurant.phone_number %>
+
+ <% @restaurant.reviews.each do |review| %>
+ <%= review.content %>
+ <% end %>
+
+<p><%= link_to 'Back Home', restaurants_path %></p>
